@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="timer-card">
+      <h1>Timer</h1>
+      <div class="mode-toggle">
+        <button class="mode-btn active" data-mode="countdown">Countdown</button>
+        <button class="mode-btn" data-mode="stopwatch">Stopwatch</button>
+      </div>
+      <div class="display" id="display">00:00</div>
+      <div class="controls">
+        <button class="btn btn-primary" id="startBtn">Start</button>
+        <button class="btn btn-secondary" id="resetBtn">Reset</button>
+      </div>
+      <div class="presets" id="presets">
+        <button class="preset-btn" data-seconds="5">5s</button>
+        <button class="preset-btn" data-seconds="60">1m</button>
+        <button class="preset-btn" data-seconds="300">5m</button>
+        <button class="preset-btn" data-seconds="600">10m</button>
+        <button class="preset-btn" data-seconds="1800">30m</button>
+      </div>
+      <div class="custom-input">
+        <input type="number" id="customMinutes" placeholder="Min" min="0" value="0">
+        <span>:</span>
+        <input type="number" id="customSeconds" placeholder="Sec" min="0" max="59" value="0">
+        <button class="btn btn-small" id="setBtn">Set</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

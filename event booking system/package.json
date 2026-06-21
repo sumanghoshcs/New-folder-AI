@@ -1,0 +1,24 @@
+{
+  "name": "event-booking-system",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["event", "booking", "system", "api", "rest"],
+  "author": "",
+  "license": "MIT",
+  "description": "A comprehensive RESTful backend system for managing event bookings with role-based access control, real-time notifications, and background job processing.",
+  "dependencies": {
+    "axios": "^1.18.0",
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "sqlite3": "^6.0.1",
+    "uuid": "^14.0.1"
+  }
+}
